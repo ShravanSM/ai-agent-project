@@ -66,3 +66,52 @@ python indexer.py
 streamlit run app.py
 
 Now open the link shown in the terminal (usually http://localhost:8501) and ask questions.
+
+## Deployment (How to Publish This App Online)
+
+To make this project available online, follow these easy steps:
+
+### 1. Go to Streamlit Cloud
+Visit: https://share.streamlit.io  
+Sign in with your GitHub account.
+
+### 2. Create a new app
+- Click **“New app”**
+- Select this repository: `ai-agent-project`
+- Choose branch: `main`
+- Choose file to run: `app.py`
+
+### 3. Add your OpenAI API Key (very important)
+In Streamlit Cloud:
+- Open **App Settings**
+- Go to **Secrets**
+- Add this:
+OPENAI_API_KEY = "your_api_key_here"
+
+### 4. Deploy the app
+Click **Deploy**.  
+Streamlit Cloud will install the dependencies and start your app.
+
+### 5. Copy your public demo link
+Once deployed, Streamlit will provide a public URL.  
+This is the link you will submit in the challenge form.
+## Limitations & Future Improvements
+
+### Current Limitations
+- The Chroma vector database is stored locally.
+- The app cannot upload files through the UI. Indexing must be done through `indexer.py`.
+- Requires an OpenAI API key.
+- No login or authentication system.
+
+### Future Improvements
+- Add file upload support inside Streamlit.
+- Move vector store to cloud DB (Pinecone / Supabase / Weaviate).
+- Add chat history & conversation memory.
+- Add user authentication (login system).
+- Improve UI design and theme.
+## Credits
+This project was created by **ShravanSM**  
+as part of the **48-Hour AI Agent Development Challenge**.
+
+
+
