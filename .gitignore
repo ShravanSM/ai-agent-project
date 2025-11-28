@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+.venv/
+venv/
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Private / sensitive
+.env
+*.env
+
+# Local vector db
+chroma_db/
+.chroma_db/
+
+# Streamlit / logs
+*.log
