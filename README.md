@@ -17,7 +17,7 @@ This agent is useful for:
 ✔ Operations document search  
 
  ## Repository Structure
-
+```
 ai-agent-project/
 ├─ app.py
 ├─ indexer.py
@@ -27,6 +27,7 @@ ai-agent-project/
 │   └─ sample1.txt
 ├─ .gitignore
 └─ chroma_db/
+```
 ## Features
 
 - Ingests TXT and PDF documents from the `sample_docs/` folder
@@ -42,28 +43,42 @@ Follow these simple steps to run the KnowledgeBase Agent on your computer.
 
 ### 1. Create a virtual environment
 Windows:
+```
 python -m venv .venv
 .venv\Scripts\activate
+```
 
 Mac/Linux:
+```
 python3 -m venv .venv
 source .venv/bin/activate
+```
 
 ### 2. Install the required packages
+```
 pip install -r requirements.txt
+```
 
 ### 3. Set your OpenAI API Key
 Windows (PowerShell):
+```
 $env:OPENAI_API_KEY="your_api_key"
+```
 
 Mac/Linux:
+```
 export OPENAI_API_KEY="your_api_key"
+```
 
 ### 4. Create the vector database
+```
 python indexer.py
+```
 
 ### 5. Run the Streamlit app
+```
 streamlit run app.py
+```
 
 Now open the link shown in the terminal (usually http://localhost:8501) and ask questions.
 
@@ -86,8 +101,9 @@ In Streamlit Cloud:
 - Open **App Settings**
 - Go to **Secrets**
 - Add this:
+```
 OPENAI_API_KEY = "your_api_key_here"
-
+```
 ### 4. Deploy the app
 Click **Deploy**.  
 Streamlit Cloud will install the dependencies and start your app.
