@@ -129,5 +129,8 @@ This is the link you will submit in the challenge form.
 This project was created by **ShravanSM**  
 as part of the **48-Hour AI Agent Development Challenge**.
 
+![Architecture Diagram](architecture.png)
+
+
 
 
