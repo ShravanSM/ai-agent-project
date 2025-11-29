@@ -149,3 +149,4 @@ if st.button("Get Answer"):
 # Small footer/help text
 st.markdown("---")
 st.caption("Upload documents, index them, then ask questions. The app persists the vector DB under 'chroma_db' in the project folder.")
+
